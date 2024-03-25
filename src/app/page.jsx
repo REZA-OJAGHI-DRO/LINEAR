@@ -7,7 +7,7 @@ import UseLiNEARAcrossTheEcoSystem from "./UseLiNEARAcrossTheEcoSystem/UseLiNEAR
 
 export default function Home() {
   return (
-    <main className="w-[100%] h-[920vh] sm:h-[950vh] md:h-[920vh] lg:h-[649vh] xl:h-[649vh] relative left-0 top-0 bg-[rgb(9,9,17)]">
+    <main className="w-[100%] h-[920vh] sm:h-[950vh] md:h-[930vh] lg:h-[649vh] xl:h-[649vh] relative left-0 top-0 bg-[rgb(9,9,17)]">
      
       <BackGround/>
 
@@ -17,7 +17,7 @@ export default function Home() {
 
           <TotalValueLocked />
 
-          <section className="w-[100%] h-[390vh] md:h-[400vh] lg:h-[270vh]">
+          <section className="w-[100%] h-[390vh] md:h-[410vh] lg:h-[270vh]">
             <div className="w-[100%] h-[100%]">
               <TheSimplestWayToStakeNEAR />
               <GovernanceToken$LNR />
@@ -49,7 +49,7 @@ function BackGround (){
           </div>
         </section>
 
-        <section className="w-[100%] h-[390vh] md:h-[400vh] lg:h-[270vh] bg-[rgb(9,9,17)]">
+        <section className="w-[100%] h-[390vh] md:h-[410vh] lg:h-[270vh] bg-[rgb(9,9,17)]">
           <div className="w-[100%] h-[100%] flex justify-center overflow-hidden">
             <div className="w-[80vw] h-[80vw] rounded-tl-full rot colorBackground2 opacity-50 blur-[700px]"></div>
           </div>

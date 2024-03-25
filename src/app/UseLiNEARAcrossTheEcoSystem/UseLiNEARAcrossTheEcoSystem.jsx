@@ -6,7 +6,7 @@ export default function UseLiNEARAcrossTheEcoSystem() {
     <section className="w-[100%] h-[180vh] md:h-[140vh] lg:h-[140vh] ">
       <div className="w-[100%] h-[100%] ">
         <article className="w-[100%] h-[30vh]">
-          <h3 className="w-[100%] h-[100%] text-white flex justify-center items-center text-center font-bold text-[2rem] md:text-[3.5rem]">
+          <h3 className="w-[100%] h-[100%] text-white flex justify-center items-center text-center font-bold text-[2rem] md:text-[2.5rem] lg:text-[3.5rem]">
             Use LiNEAR Across the Ecosystem
           </h3>
         </article>
