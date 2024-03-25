@@ -18,7 +18,7 @@ export default function UseLiNEARAcrossTheEcoSystem() {
 
 function Article() {
   return (
-    <article className="w-[100%] h-[150vh] md:h-[110vh] flex justify-center">
+    <article className="w-[100%] h-[150vh] md:h-[110vh] flex justify-center pt-4">
       <ul className="w-[100%] lg:w-[90%] h-[100%] gap-10  flex justify-around content-around flex-wrap *:rounded-2xl pb-10">
         <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
