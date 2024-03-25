@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LINEAR
+**If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-## Getting Started
+![Screenshot (75)](https://github.com/REZA-OJAGHI-DRO/LINEAR/assets/145910720/86e5c1e6-f3ce-470e-bc0d-9c9bc141988d)
 
-First, run the development server:
+- [Demo Project(VPN)]()
+ 
+- Developed by reza ojaghi
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Created - 2024-3-9
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Technologies Used - Html , bootstrap , js  , react, next.js , zustand , Topic-Listing 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Hooks Used : useState 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Role - Frontend
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- How to reach me : with my [instagram](https://www.instagram.com/reza-ojaghi-dro) and [linkedin](https://www.linkedin.com/in/reza-ojaghi-428748280/)# LINEAR
