@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="w-[100%] h-[10vh] z-50 fixed top-0">
       <div className="w-[100%] h-[100%] absolute top-0 backdropBlur "></div>
-     <div className="w-[100%] h-[100%] flex justify-between items-center absolute top-0">
+     <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
       <Logo />
       <Menu />
      </div>
@@ -15,7 +15,7 @@ export default function Header() {
 
 function Logo() {
   return (
-    <div className="w-[14%] h-[100%] flex items-center justify-center">
+    <div className="xl:w-[14%] h-[100%] flex items-center justify-center">
       <Image
         src="/header/logoLinear.svg"
         alt="Picture of the author"
@@ -33,9 +33,10 @@ function Logo() {
 
 function Menu() {
   return (
-    <ul className="w-[24%] h-[100%] flex *:flex *:justify-center *:items-center *:px-1">
-      <li>
-        <Link href="https://discord.com/invite/bkkvWwMf2T">
+    <ul className=" xl:w-[24%] h-[100%] flex *:flex *:justify-center *:items-center *:px-1">
+      <li >
+        <Link href="https://discord.com/invite/bkkvWwMf2T"  
+        className="hidden sm:flex">
           <Image
             src="/header/discord.svg"
             alt="Picture of the author"
@@ -50,7 +51,8 @@ function Menu() {
         </Link>
       </li>
       <li>
-        <Link href="https://twitter.com/LinearProtocol">
+        <Link href="https://twitter.com/LinearProtocol"
+        className="hidden sm:flex">
           <Image
             src="/header/x.svg"
             alt="Picture of the author"
@@ -65,7 +67,8 @@ function Menu() {
         </Link>
       </li>
       <li>
-        <Link href="https://medium.com/@LiNEAR_LSD">
+        <Link href="https://medium.com/@LiNEAR_LSD"
+        className="hidden sm:flex">
           <Image
             src="/header/medium.svg"
             alt="Picture of the author"
@@ -80,7 +83,8 @@ function Menu() {
         </Link>
       </li>
       <li>
-        <Link href="https://github.com/linear-protocol">
+        <Link href="https://github.com/linear-protocol"
+        className="hidden sm:flex">
           <Image
             src="/header/github.svg"
             alt="Picture of the author"

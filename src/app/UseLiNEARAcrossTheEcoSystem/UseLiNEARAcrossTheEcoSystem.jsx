@@ -3,22 +3,14 @@ import Image from "next/image";
 
 export default function UseLiNEARAcrossTheEcoSystem() {
   return (
-    <section className="w-[100%] h-[180vh] bg-[#0a0a10]">
-      <div className="w-[100%] relative">
-        <div className="w-[100%] absolute top-0 flex justify-center overflow-hidden backdropBlur">
-          <div className="w-[80vw] h-[80vw] rounded-tl-full rot2 colorBackground3 opacity-90 blur-[800px]"></div>
-        </div>
-
-        <div className="w-[100%] h-[100%] absolute top-0">
-          <article className="w-[100%] h-[30vh]">
-            <h3 className="w-[100%] h-[100%] text-white flex justify-center items-center text-center font-bold text-[3.5rem]">
-              Use LiNEAR Across the Ecosystem
-            </h3>
-          </article>
-
-          <Article />
-        </div>
-
+    <section className="w-[100%] h-[180vh] md:h-[140vh] lg:h-[140vh] ">
+      <div className="w-[100%] h-[100%] ">
+        <article className="w-[100%] h-[30vh]">
+          <h3 className="w-[100%] h-[100%] text-white flex justify-center items-center text-center font-bold text-[2rem] md:text-[3.5rem]">
+            Use LiNEAR Across the Ecosystem
+          </h3>
+        </article>
+        <Article />
       </div>
     </section>
   );
@@ -26,9 +18,9 @@ export default function UseLiNEARAcrossTheEcoSystem() {
 
 function Article() {
   return (
-    <article className="w-[100%]  flex justify-center">
-      <ul className="w-[80%] h-[100%] gap-20 flex justify-around content-around flex-wrap *:rounded-2xl pb-10">
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+    <article className="w-[100%] h-[150vh] md:h-[110vh] flex justify-center">
+      <ul className="w-[100%] lg:w-[90%] h-[100%] gap-10  flex justify-around content-around flex-wrap *:rounded-2xl pb-10">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://near.org/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -46,7 +38,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://metaweb.vc/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -64,7 +56,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://www.proximity.dev/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -82,7 +74,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://app.ref.finance/orderbook/spot"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -100,7 +92,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://senderwallet.io/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -118,7 +110,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://app.ref.finance/#linear-protocol.near%7Cnear"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -136,7 +128,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://meteorwallet.app/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -154,7 +146,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://burrow.finance/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -172,7 +164,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://phoenixbonds.org/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -190,7 +182,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://oct.network/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -208,7 +200,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://aurora.dev/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -226,7 +218,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://jumbo.exchange/"
             className="w-[100%] h-[100%] flex justify-center items-center"
@@ -244,7 +236,7 @@ function Article() {
             />
           </Link>
         </li>
-        <li className="w-[320px] h-[120px] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
+        <li className="w-[40%] md:w-[27%] lg:w-[23%] h-[8%] md:h-[15%] border-[.005px] border-[rgba(255,255,255,.03)] backdropBlur3">
           <Link
             href="https://dex.btse.com/trade/SPOT_LNR_USDC.e"
             className="w-[100%] h-[100%] flex justify-center items-center"
