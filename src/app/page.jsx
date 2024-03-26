@@ -1,18 +1,20 @@
-import OmnichainLiquid from "./OmnichainLiquid/OmnichainLiquid";
-import TotalValueLocked from "./TotalValueLocked/TotalValueLocked";
-import TheSimplestWayToStakeNEAR from "./TheSimplestWayToStakeNEAR/TheSimplestWayToStakeNEAR";
-import GovernanceToken$LNR from "./GovernanceToken$LNR/GovernanceToken$LNR";
-import Slide from "./slide/slide";
-import UseLiNEARAcrossTheEcoSystem from "./UseLiNEARAcrossTheEcoSystem/UseLiNEARAcrossTheEcoSystem";
+import OmnichainLiquid from "./page1/OmnichainLiquid/OmnichainLiquid";
+import TotalValueLocked from "./page1/TotalValueLocked/TotalValueLocked";
+import TheSimplestWayToStakeNEAR from "./page1/TheSimplestWayToStakeNEAR/TheSimplestWayToStakeNEAR";
+import GovernanceToken$LNR from "./page1/GovernanceToken$LNR/GovernanceToken$LNR";
+import Slide from "./page1/slide/slide";
+import UseLiNEARAcrossTheEcoSystem from "./page1/UseLiNEARAcrossTheEcoSystem/UseLiNEARAcrossTheEcoSystem";
+import Header from "./header/header"
 
 export default function Home() {
   return (
     <main className="w-[100%] h-[920vh] sm:h-[950vh] md:h-[930vh] lg:h-[649vh] xl:h-[649vh] relative left-0 top-0 bg-[rgb(9,9,17)]">
-     
+      <Header/>
       <BackGround/>
 
       <div className="w-[100%] h-[100%] absolute top-0 left-0 flex justify-center">
         <div className="w-[100%] h-[100%] 2xl:container">
+
           <OmnichainLiquid />
 
           <TotalValueLocked />

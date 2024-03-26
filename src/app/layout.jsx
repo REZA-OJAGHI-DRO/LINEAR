@@ -1,6 +1,5 @@
 
 import "./globals.css";
-import Header from "./header/header"
 import Footer from "./footer/footer";
 
 import localFont from "next/font/local";
@@ -23,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className={myFont.className}>
         <div className="w-[100%]">
 
-        <Header/>
+        
         {children}
         <Footer/>
 

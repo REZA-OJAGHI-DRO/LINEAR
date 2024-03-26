@@ -1,24 +1,25 @@
 // import Image from "next/image";
 import Link from "next/link";
-import "./../globals.css";
-import Logo from "./LogeHeader/logo";
-import Menu from "./menu/menu";
+import "../../globals.css";
+import Logo from "@/app/header/LogeHeader/logo";
+import Menu from "@/app/header/menu/menu";
+import MenuStake from "./menuStake/menuStake";
 
 export default function Header() {
   return (
     <header className="w-[100%] h-[10vh] z-50 fixed top-0">
       <div className="w-[100%] h-[100%] absolute top-0 backdropBlur "></div>
-      <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
-        <Logo />
-        <div className=" xl:w-[24%] h-[100%] flex  items-center px-1">
+     <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
+      <Logo />
+      <MenuStake/>
+      <div className=" xl:w-[24%] h-[100%] flex  items-center px-1">
           <Menu />
           <Ul />
         </div>
-      </div>
+     </div>
     </header>
   );
 }
-
 
 
 function Ul() {
@@ -28,11 +29,11 @@ function Ul() {
         <Link
           href="../page2"
           target="_blank"
-          className="w-[6.5rem] h-[2.5rem] rounded-full colorBackground flex justify-center items-center p-[.05rem] "
+          className="w-[7.5rem] h-[2.5rem] rounded-full colorBackground flex justify-center items-center p-[.05rem] "
         >
           <div className="bgTheme w-[100%] h-[100%] rounded-full">
             <button className="w-[100%] h-[100%] flex justify-center items-center colorText font-semibold text-[.9rem] capitalize">
-              stake now
+              connect wallet
             </button>
           </div>
         </Link>

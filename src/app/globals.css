@@ -8,6 +8,8 @@
   --colorBackground2:linear-gradient(134deg, #2fe6ff 5.57%, #0df 16.55%, #00d3ff 27.53%, #44c7ff 38.51%, #73b9ff 49.5%, #9ba9ff 60.48%, #bf96ff 60.46%, #dc82eb 50.44%, #f26ccc 73.42%, #ff58a8 40.4%);
   --colorBackground3:linear-gradient(134deg, #025144 50.57%, rgb(4, 78, 51) 50.55%, #004221 50.53%, #09a435 38.51%, #024506 49.5%, #9ba9ff 60.48%, #9698ff 60.46%, #82c3eb 50.44%, #6c90f2 73.42%, #0947a4 40.4%);
   --bgTheme:#090811;
+  --bgStake1:rgb(18,20,27);
+  --bgStake2:rgb(22,32,39);
 }
 
 
@@ -44,6 +46,13 @@ background: var(--bgTheme);
   background-image: var(--colorBackground3);
 }
 
+.colorBackgroundTotal{
+  background-image: var(--colorBackground);
+  backdrop-filter: blur(200px);
+
+}
+
+
 .backdropBlur{
   backdrop-filter: blur(100px);
   background-color: rgba(0,0,0,.01);
@@ -75,4 +84,24 @@ background: var(--bgTheme);
 }
 .rot2{
   transform: rotateX(70deg) translateX(20vw) translateY(10vh);
+}
+
+
+.bgStake{
+  background-image: url('./background/OmnichainLiquid/hero-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+ 
+}
+
+.focusBorder:focus{
+  outline: none;
+}
+
+.bgStake1{
+  background-color: var(--bgStake1);
+}
+
+.bgStake2{
+  background-color: var(--bgStake2);
 }
