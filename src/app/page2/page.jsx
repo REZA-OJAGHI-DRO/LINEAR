@@ -3,7 +3,7 @@ import Total from "./Total/Total";
 import StakeYour$NEAR from "./StakeYour$NEAR/StakeYour$NEAR";
 export default function Page2() {
   return (
-    <main className="w-[100%] h-[150vh] bg-slate-900">
+    <main className="w-[100%] h-[110vh] sm:h-[180vh] xl:h-[165vh] bg-slate-900">
       <BackGround />
       <Header />
       <div className="w-[100%] h-[100%] absolute top-0 left-0 flex justify-center">
@@ -25,9 +25,9 @@ function BackGround() {
         </article>
       </div>
 
-      <section className="w-[100%] h-[70vh] bg-[#0a0a10]">
+      <section className="w-[100%] h-[30vh] sm:h-[100vh] xl:h-[85vh] bg-[#0a0a10]">
         <div className="w-[100%] h-[100%] flex justify-center overflow-hidden backdropBlur">
-          <div className="w-[35vw] h-[35vw] border rounded-full translate-y-[60vh] colorBackground2 opacity-70 -rotate-[70deg] blur-[270px]"></div>
+          <div className="w-[35vw] h-[35vw] rounded-full translate-y-[60vh] colorBackground2 opacity-70 -rotate-[70deg] blur-[270px]"></div>
         </div>
       </section>
     </div>

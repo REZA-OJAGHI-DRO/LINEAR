@@ -5,12 +5,12 @@ import { useRef } from "react";
 
 export default function StakeYour$NEAR() {
   return (
-    <section className="w-[100%] h-[110vh]">
-      <article className="w-[100%] h-[12%]">
-        <h1 className="w-[100%] text-center text-[3.5rem] text-white font-bold">
+    <section className="w-[100%] h-[100vh] sm:h-[130vh] pt-[20vh] xl:pt-0">
+      <article className="w-[100%] h-[12%] md:h-[25%] lg:h-[12%]">
+        <h1 className="w-[100%] text-center text-[2rem] md:text-[3.5rem] text-white font-bold">
           Stake Your $NEAR
         </h1>
-        <p className="w-[100%] text-center text-[1rem] text-zinc-400">
+        <p className="w-[100%] text-center text-[.8rem] md:text-[1rem] text-zinc-400">
           Stake $NEAR and receive $LiNEAR while earning staking rewards
         </p>
       </article>
@@ -37,8 +37,8 @@ function Article() {
     }
   }
   return (
-    <article  className="w-[100%] h-[88%]">
-      <div className="w-[100%] h-[15%]  flex justify-center items-center">
+    <article  className="w-[100%] h-[88%] md:h-[75%] lg:h-[88%]">
+      <div className="w-[100%] h-[15%] md:h-[25%] lg:h-[15%] flex justify-center items-center">
         <div
           ref={click}
           className="w-[22rem] h-[45%] border-[.005px] p-1 border-[rgba(255,255,255,.1)] rounded-full bg-[rgb(13,12,18)] flex"
@@ -59,7 +59,7 @@ function Article() {
       </div>
 
       <div ref={stake} className="w-[100%] h-[85%] flex justify-center items-start ">
-        <div className="w-[550px] p-7 rounded-xl border-[.005px] border-[rgba(255,255,255,.01)] backdropBlur2">
+        <div className="w-[100%] md:w-[550px] px-2 py-7 md:p-7 rounded-xl border-[.005px] border-[rgba(255,255,255,.01)] backdropBlur2">
           <div className="w-[100%] h-[130px] rounded-xl overflow-hidden bgStake1 flex flex-wrap justify-center">
             <div className="w-[100%] h-[50%] flex items-center justify-between">
               <div className="w-[20%] h-[100%] flex justify-center items-center gap-2">
@@ -96,7 +96,7 @@ function Article() {
             </div>
           </div>
 
-          <button className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize">
+          <button className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize mt-2">
             connect wallet
           </button>
 
@@ -108,7 +108,7 @@ function Article() {
         <div className="w-[550px] p-5 rounded-xl border-[.005px] border-[rgba(255,255,255,.01)] backdropBlur2">
           <div className="w-[100%] h-[130px] rounded-xl overflow-hidden bgStake1 flex flex-wrap justify-center">
             <div className="w-[100%] h-[50%] flex items-center justify-between">
-              <div className="w-[20%] h-[100%] flex justify-center items-center gap-2">
+              <div className="w-[25%] h-[100%] flex justify-center items-center gap-2">
                 <Image
                   src="/page2Stake/StakeYour$NEAR/linear.svg"
                   alt="Picture of the author"

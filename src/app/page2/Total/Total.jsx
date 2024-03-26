@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Total() {
   return (
-    <section className="w-[100%] h-[50vh]  flex justify-center items-center pt-16">
+    <section className="w-[100%] h-[50vh]   justify-center items-center pt-16 hidden xl:flex">
       <article className="w-[60%]  h-[80%] xl:h-[50%] flex flex-wrap justify-between items-center mt-3">
 
         <article className="w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl ">
