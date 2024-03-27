@@ -1,7 +1,7 @@
 # LINEAR
 **If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-![Screenshot (75)](https://github.com/REZA-OJAGHI-DRO/LINEAR/assets/145910720/86e5c1e6-f3ce-470e-bc0d-9c9bc141988d)
+
 
 - [Demo Project(VPN)]()
  
