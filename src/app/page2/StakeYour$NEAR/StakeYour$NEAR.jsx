@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-
+import useStore from "@/app/store/store";
 import { useRef } from "react";
 
 export default function StakeYour$NEAR() {
@@ -35,6 +35,11 @@ function Article() {
         stake.current.style.display='none'
         unStake.current.style.display='flex'
     }
+  }
+
+  const dis2 = useStore((state) => state.dis2);
+  function modal(e){
+    dis2('flex')
   }
   return (
     <article  className="w-[100%] h-[88%] md:h-[75%] lg:h-[88%]">
@@ -96,7 +101,7 @@ function Article() {
             </div>
           </div>
 
-          <button className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize mt-2">
+          <button onClick={()=>modal(event)} className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize mt-2">
             connect wallet
           </button>
 

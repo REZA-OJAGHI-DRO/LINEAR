@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-[100%] h-[17vh] bg-[#0a0a10] flex flex-wrap content-start gap-3">
+    <footer className="w-[100%] h-[17vh] z-50 bg-[#0a0a10] flex flex-wrap content-start gap-3">
       <p className="w-[100%] pt-2 text-center text-zinc-200">
         © Copyright 2024 LiNEAR DAO. All Rights Reserved.
       </p>

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function MenuStake(){
     return(
-        <ul className="w-[28%] h-[100%] flex *:text-[1.1rem]  justify-between *:text-white *:capitalize *:font-bold items-center">
+        <ul className="hidden  w-[28%] h-[100%] xl:flex *:text-[1.1rem]  justify-between *:text-white *:capitalize *:font-bold items-center">
             <li>
-                <Link href='' className='text-zinc-400 hover:text-zinc-500 transition-all duration-300'>
+                <Link href='../../../page4' className='text-zinc-400 hover:text-zinc-500 transition-all duration-300'>
                     🔥 airdrop
                 </Link>
             </li>
@@ -15,7 +15,7 @@ export default function MenuStake(){
                 </Link>
             </li>
             <li>
-            <Link href='' className='text-zinc-400 hover:text-zinc-500 transition-all duration-300'>
+            <Link href='../../../page3' className='text-zinc-400 hover:text-zinc-500 transition-all duration-300'>
                     my account
                 </Link>
             </li>

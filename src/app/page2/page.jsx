@@ -1,11 +1,13 @@
 import Header from "./header/header";
 import Total from "./Total/Total";
 import StakeYour$NEAR from "./StakeYour$NEAR/StakeYour$NEAR";
+import MenuList from "./header/menuList/menuList";
 export default function Page2() {
   return (
     <main className="w-[100%] h-[110vh] sm:h-[180vh] xl:h-[165vh] bg-slate-900">
       <BackGround />
       <Header />
+      <MenuList />
       <div className="w-[100%] h-[100%] absolute top-0 left-0 flex justify-center">
         <div className="w-[100%] h-[100%] 2xl:container">
           <Total />

@@ -1,38 +1,67 @@
-// import Image from "next/image";
+'use client'
+
+import Image from "next/image";
 import Link from "next/link";
 import "../../globals.css";
 import Logo from "@/app/header/LogeHeader/logo";
+import Logo2 from "./logo2/logo2";
 import Menu from "@/app/header/menu/menu";
 import MenuStake from "./menuStake/menuStake";
+import useStore from "@/app/store/store";
+import Modal from "@/app/connectWallet/coonectWallet";
+import HereWalletModal from "@/app/connectWallet/HereWalletModal/HereWalletModal";
 
 export default function Header() {
   return (
-    <header className="w-[100%] h-[10vh] z-50 fixed top-0">
+    <>
+    <HereWalletModal/>
+    <Modal/>
+    <header className="w-[100%] h-[10vh] relative bgTheme z-30">
       <div className="w-[100%] h-[100%] absolute top-0 backdropBlur "></div>
-     <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
-      <Logo />
-      <MenuStake/>
-      <div className=" xl:w-[24%] h-[100%] flex  items-center px-1">
+      <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
+        <div className=" w-[80%] md:w-[60%] xl:w-[20%] h-[100%] flex justify-center items-center gap-4">
+          <Logo />
+          <Logo2 />
+        </div>
+
+        <MenuStake />
+        <div className=" xl:w-[24%] h-[100%] flex  items-center px-1">
           <Menu />
           <Ul />
+          <button className="flex xl:hidden">
+          <Image
+          src="/header/menu.svg"
+          alt="Picture of the author"
+          width="400000"
+          height="400000"
+          style={{
+            width: "1.65rem",
+            height: "1.4rem",
+            objectFit: "cover",
+          }}
+          />
+          </button>
         </div>
-     </div>
+      </div>
     </header>
+    </>
   );
 }
 
-
 function Ul() {
+  const dis2 = useStore((state) => state.dis2);
+  function modal(e){
+    dis2('flex')
+  }
   return (
-    <ul className=" xl:w-[50%] h-[100%] flex *:flex *:justify-center *:items-center *:px-1">
+    <ul className="hidden xl:w-[50%] h-[100%] xl:flex *:flex *:justify-center *:items-center *:px-1">
       <li className="ms-5">
         <Link
-          href="../page2"
-          target="_blank"
+          href=""
           className="w-[7.5rem] h-[2.5rem] rounded-full colorBackground flex justify-center items-center p-[.05rem] "
         >
           <div className="bgTheme w-[100%] h-[100%] rounded-full">
-            <button className="w-[100%] h-[100%] flex justify-center items-center colorText font-semibold text-[.9rem] capitalize">
+            <button onClick={()=>modal(event)} className="w-[100%] h-[100%] flex justify-center items-center colorText font-semibold text-[.9rem] capitalize">
               connect wallet
             </button>
           </div>
@@ -41,3 +70,6 @@ function Ul() {
     </ul>
   );
 }
+
+
+
