@@ -26,8 +26,8 @@ export default function Header() {
     <MenuList/>
     <header className="w-[100%] h-[10vh] md:h-[15vh] xl:h-[10vh] relative bgTheme z-30">
       <div className="w-[100%] h-[100%] absolute top-0 backdropBlur "></div>
-      <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
-        <div className=" w-[80%] md:w-[60%] xl:w-[20%] h-[100%] flex justify-center items-center gap-4">
+      <div className="w-[100%] h-[100%] flex md:px-5 justify-between items-center absolute top-0">
+        <div className=" w-[80%] md:w-[60%] xl:w-[20%] h-[100%] flex justify-center items-center gap-1 md:gap-4">
           <Logo />
           <Logo2 />
         </div>
