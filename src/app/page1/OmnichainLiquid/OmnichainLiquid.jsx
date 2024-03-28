@@ -32,7 +32,7 @@ function S1() {
 
           <div className="w-[100%] h-[60%] flex justify-center items-center gap-10">
             <Link
-              href=""
+              href="../../page2"
               className="w-[9rem] sm:w-[10rem] h-[3rem] sm:h-[3.5rem] rounded-full colorBackground flex justify-center items-center p-[.05rem] "
             >
               <button className="w-[100%] h-[100%] flex justify-center items-center text-black font-semibold text-[1rem] sm:text-[1.1rem] capitalize">
