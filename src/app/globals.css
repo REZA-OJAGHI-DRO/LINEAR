@@ -24,11 +24,32 @@
   --bgClickSlide1:rgb(255,255,255);
   --bgClickSlide2:rgb(63,63,70);
   --bgTotal2:rgb(24,26,49);
+  
+}
+
+.bgBorder1{
+  background-image:linear-gradient(to top left,rgba(255,255,255,.03) 50% ,#068398 90%) ;
+}
+.bgBorder2{
+  background-image:linear-gradient(to top left,rgba(255,255,255,.03) 50% ,#8F8925 90%) ;
+}
+.bgBorder3{
+  background-image:linear-gradient(to top left,rgba(255,255,255,.03) 50% ,#9126AD 90%) ;
+}
+
+.border1{
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to left,#068398 40%,rgba(255,255,255,.03) 80%) 1;
+}
+.border2{
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(#068398 40%,rgba(255,255,255,.03) 80%) 1;
 }
 
 .colorTextParagraph1{
   color: var(--colorTextParagraph1);
 }
+
 
 .colorTextParagraph2{
   color: var(--colorTextParagraph2);
