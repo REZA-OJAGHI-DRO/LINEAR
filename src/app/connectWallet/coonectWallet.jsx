@@ -1,3 +1,5 @@
+'use client'
+
 import { useRef } from "react";
 import useStore from "../store/store";
 import Image from "next/image";
@@ -8,9 +10,35 @@ export default function Modal() {
   const li = useRef();
   const y = ["", "", "", "", "", ""];
   const page = useRef();
+  const loadClose=useRef()
+  const loadMyNearWallet1=useRef()
+  const loadMyNearWallet2=useRef()
+  const loadMeteorWallet1=useRef()
+  const loadMeteorWallet2=useRef()
+  const loadHereWallet1=useRef()
+  const loadHereWallet2=useRef()
+  const loadWalletConnect1=useRef()
+  const loadWalletConnect2=useRef()
+  const button1=useRef()
+  const button2=useRef()
+  const button3=useRef()
+  const button4=useRef()
 
   function pageWallet(e, x) {
     y.map((val, i) => {
+      loadMyNearWallet1.current.style.display='flex'
+      loadMyNearWallet2.current.style.display='none'
+      loadMeteorWallet1.current.style.display='flex'
+      loadMeteorWallet2.current.style.display='none'
+      loadHereWallet1.current.style.display='flex'
+      loadHereWallet2.current.style.display='none'
+      loadWalletConnect1.current.style.display='flex'
+      loadWalletConnect2.current.style.display='none'
+      button1.current.style.display='none'
+      button2.current.style.display='none'
+      button3.current.style.display='none'
+      button4.current.style.display='none'
+
       if (i < 5) {
         li.current.children[i].style.background = "rgb(22,20,36)";
       }
@@ -20,18 +48,80 @@ export default function Modal() {
     if (x == 0) {
       li.current.children[0].style.background = "rgb(79,124,209)";
       page.current.children[0].style.display = "flex";
+      setTimeout(()=>{
+        loadMyNearWallet1.current.style.display='none'
+        loadMyNearWallet2.current.style.display='flex'
+        button1.current.style.display='flex'
+      },3000)
     } else if (x == 1) {
       li.current.children[1].style.background = "rgb(79,124,209)";
       page.current.children[1].style.display = "flex";
+      setTimeout(()=>{
+        loadMeteorWallet1.current.style.display='none'
+        loadMeteorWallet2.current.style.display='flex'
+        button2.current.style.display='flex'
+      },3000)
     } else if (x == 2) {
       li.current.children[2].style.background = "rgb(79,124,209)";
       page.current.children[2].style.display = "flex";
+      setTimeout(()=>{
+        loadHereWallet1.current.style.display='none'
+        loadHereWallet2.current.style.display='flex'
+        button3.current.style.display='flex'
+      },3000)
     } else if (x == 3) {
       li.current.children[3].style.background = "rgb(79,124,209)";
       page.current.children[3].style.display = "flex";
+      setTimeout(()=>{
+        loadWalletConnect1.current.style.display='none'
+        loadWalletConnect2.current.style.display='flex'
+        button4.current.style.display='flex'
+      },3000)
     } else if (x == 4) {
       li.current.children[4].style.background = "rgb(79,124,209)";
       page.current.children[4].style.display = "flex";
+    }
+  }
+
+  function clickLoad(e,x){
+    y.map((val, i) => {
+      loadMyNearWallet1.current.style.display='flex'
+      loadMyNearWallet2.current.style.display='none'
+      loadMeteorWallet1.current.style.display='flex'
+      loadMeteorWallet2.current.style.display='none'
+      loadHereWallet1.current.style.display='flex'
+      loadHereWallet2.current.style.display='none'
+      loadWalletConnect1.current.style.display='flex'
+      loadWalletConnect2.current.style.display='none'
+      button1.current.style.display='none'
+      button2.current.style.display='none'
+      button3.current.style.display='none'
+      button4.current.style.display='none'
+    });
+    if(x==0){
+      setTimeout(()=>{
+        loadMyNearWallet1.current.style.display='none'
+        loadMyNearWallet2.current.style.display='flex'
+        button1.current.style.display='flex'
+      },3000)
+    }else if(x==1){
+      setTimeout(()=>{
+        loadMeteorWallet1.current.style.display='none'
+        loadMeteorWallet2.current.style.display='flex'
+        button2.current.style.display='flex'
+      },3000)
+    }else if(x==2){
+      setTimeout(()=>{
+        loadHereWallet1.current.style.display='none'
+        loadHereWallet2.current.style.display='flex'
+        button3.current.style.display='flex'
+      },3000)
+    }else if(x==3){
+      setTimeout(()=>{
+        loadWalletConnect1.current.style.display='none'
+        loadWalletConnect2.current.style.display='flex'
+        button4.current.style.display='flex'
+      },3000)
     }
   }
 
@@ -67,6 +157,8 @@ function closeGetWallet(){
   page.current.children[5].style.display = "flex";
 
 }
+
+
   return (
     <section
       style={{ display: dNone }}
@@ -224,13 +316,19 @@ function closeGetWallet(){
                 MyNearWallet
               </p>
             </div>
-            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p ref={loadMyNearWallet1} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(109,94,213)] capitalize font-semibold">
+              connecting to my near wallet...
+              </p>
+              <p ref={loadMyNearWallet2} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(204,89,110)] capitalize font-semibold">
+             <i className="text-[rgb(204,89,110)] bi bi-x-circle"></i>
+              connection failed
+              </p>
             <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Meteor Wallet: User closed the window
               before completing the action
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button onClick={()=>clickLoad(event,0)} ref={button1} style={{display:'none'}} className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -260,13 +358,19 @@ function closeGetWallet(){
                 Meteor Wallet
               </p>
             </div>
-            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p ref={loadMeteorWallet1} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(109,94,213)] capitalize font-semibold">
+              connecting to my near wallet...
+              </p>
+              <p ref={loadMeteorWallet2} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(204,89,110)] capitalize font-semibold">
+             <i className="text-[rgb(204,89,110)] bi bi-x-circle"></i>
+              connection failed
+              </p>
             <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Meteor Wallet: User closed the window
               before completing the action
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button onClick={()=>clickLoad(event,1)} ref={button2} style={{display:'none'}} className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -296,12 +400,18 @@ function closeGetWallet(){
                 HereWallet
               </p>
             </div>
-            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p ref={loadHereWallet1} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(109,94,213)] capitalize font-semibold">
+              connecting to my near wallet...
+              </p>
+              <p ref={loadHereWallet2} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(204,89,110)] capitalize font-semibold">
+             <i className="text-[rgb(204,89,110)] bi bi-x-circle"></i>
+              connection failed
+              </p>
             <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Here Wallet:
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button onClick={()=>clickLoad(event,2)} ref={button3} style={{display:'none'}} className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -331,14 +441,20 @@ function closeGetWallet(){
                 Wallet Connect
               </p>
             </div>
-            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p ref={loadWalletConnect1} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(109,94,213)] capitalize font-semibold">
+              connecting to my near wallet...
+              </p>
+              <p ref={loadWalletConnect2} className="w-[100%] text-center flex justify-center gap-2 items-center text-[rgb(204,89,110)] capitalize font-semibold">
+             <i className="text-[rgb(204,89,110)] bi bi-x-circle"></i>
+              connection failed
+              </p>
             <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem] text-ellipsis overflow-hidden">
               Failed to sign in with WalletConnect: WebSocket connection failed
               for URL:
               wss://relay.walletconnect.com?auth=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkaWQ6a2V5Ono2TWt1VW1ybmVKVkhGRmto
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="colorTextButton2 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button onClick={()=>clickLoad(event,3)} ref={button4} style={{display:'none'}} className="colorTextButton2 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
