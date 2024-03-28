@@ -1,7 +1,7 @@
 export default function TheSimplestWayToStakeNEAR() {
   return (
     <section className="w-[100%] h-[170vh] sm:h-[240vh] lg:h-[120vh]">
-      <h3 className="w-[100%] h-[20vh] lg:h-[30vh] flex justify-center items-center text-center font-semibold text-[1.7rem] sm:text-[2rem] lg:text-[3.5rem] colorTextTitle1">
+      <h3 className="w-[100%] h-[20vh] lg:h-[30vh] flex justify-center items-center text-center font-semibold text-[1.5rem] sm:text-[2rem] lg:text-[3.5rem] colorTextTitle1">
         The simplest way to stake NEAR
       </h3>
       <Article />
