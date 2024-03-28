@@ -5,10 +5,17 @@ import GovernanceToken$LNR from "./page1/GovernanceToken$LNR/GovernanceToken$LNR
 import Slide from "./page1/slide/slide";
 import UseLiNEARAcrossTheEcoSystem from "./page1/UseLiNEARAcrossTheEcoSystem/UseLiNEARAcrossTheEcoSystem";
 import Header from "./header/header"
+import Menu from "./header/menu/menu";
 
 export default function Home() {
+  
   return (
     <main className="w-[100%] h-[780vh] sm:h-[950vh] md:h-[1010vh] lg:h-[709vh] xl:h-[649vh] relative left-0 top-0 bg-[rgb(9,9,17)]">
+     
+      <div className="z-50 fixed top-[90vh] left-[calc(50%-100px)] backdropBlur w-[200px] h-[50px] border-[.005px] border-[rgba(255,255,255,0.22)] flex md:hidden justify-center items-center rounded-xl">
+      <Menu/>
+      </div>
+
       <Header/>
       <BackGround/>
 
