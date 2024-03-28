@@ -52,7 +52,7 @@ export default function Page3() {
 function BackGround() {
   return (
     <div className="w-[100%] h-[100%] absolute top-0 left-0 overflow-hidden">
-      <div className="w-[100%] h-[80vh] sm:h-[80vh] lg:h-[80vh] bg-[rgb(9,9,17)] bgStake">
+      <div className="w-[100%] h-[100vh] sm:h-[100vh] lg:h-[100vh] bg-[rgb(9,9,17)] bgStake">
         <article className="w-[100%] h-[100%] overflow-hidden flex justify-center pt-[20vh]">
           {/* <div className="colorBackground  w-[60%] h-[20vh]  opacity-30 blur-[80px] "></div> */}
         </article>
