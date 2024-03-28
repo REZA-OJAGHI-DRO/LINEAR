@@ -45,7 +45,7 @@ function BackGround (){
           </article>
         </div>
 
-        <section className="w-[100%] h-[60vh] bg-[#0a0a10]">
+        <section className="w-[100%] h-[60vh] bgTheme">
           <div className="w-[100%] h-[100%] flex justify-center overflow-hidden backdropBlur">
             <div className="w-[30vw] h-[30vw] border rounded-full translate-y-96 colorBackground opacity-80 blur-[200px]"></div>
           </div>
@@ -57,7 +57,7 @@ function BackGround (){
           </div>
         </section>
 
-        <section className="w-[100%] h-[180vh] md:h-[140vh] lg:h-[140vh] bg-[#0a0a10]">
+        <section className="w-[100%] h-[180vh] md:h-[140vh] lg:h-[140vh] bgTheme">
         <div className="w-[100%] h-[100%] flex justify-center overflow-hidden">
           <div className="w-[100%] h-[100%] rounded-tl-full rot2 colorBackground3 opacity-90 blur-[800px]"></div>
         </div>

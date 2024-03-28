@@ -7,10 +7,10 @@ export default function StakeYour$NEAR() {
   return (
     <section className="w-[100%] h-[100vh] sm:h-[130vh] pt-[20vh] xl:pt-0">
       <article className="w-[100%] h-[12%] md:h-[25%] lg:h-[12%]">
-        <h1 className="w-[100%] text-center text-[2rem] md:text-[3.5rem] text-white font-bold">
+        <h1 className="w-[100%] text-center text-[2rem] md:text-[3.5rem] colorTextTitle1 font-bold">
           Stake Your $NEAR
         </h1>
-        <p className="w-[100%] text-center text-[.8rem] md:text-[1rem] text-zinc-400">
+        <p className="w-[100%] text-center text-[.8rem] md:text-[1rem] colorTextParagraph2">
           Stake $NEAR and receive $LiNEAR while earning staking rewards
         </p>
       </article>
@@ -50,13 +50,13 @@ function Article() {
         >
           <button
             onClick={() => clickStake(event, 0)}
-            className="w-[50%] h-[100%] rounded-full bg-[rgb(74,76,80)] text-white text-[1.2rem] font-bold capitalize flex justify-center items-center"
+            className="w-[50%] h-[100%] rounded-full bg-[rgb(74,76,80)] colorTextButton2 text-[1.2rem] font-bold capitalize flex justify-center items-center"
           >
             stake
           </button>
           <button
             onClick={() => clickStake(event, 1)}
-            className="w-[50%] h-[100%] rounded-full text-white text-[1.2rem] font-bold capitalize flex justify-center items-center"
+            className="w-[50%] h-[100%] rounded-full colorTextButton2 text-[1.2rem] font-bold capitalize flex justify-center items-center"
           >
             unstake
           </button>
@@ -82,16 +82,16 @@ function Article() {
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[1rem] md:text-[1.2rem] text-white font-semibold ">NEAR</p>
+                <p className="text-[1rem] md:text-[1.2rem] colorTextParagraph1 font-semibold ">NEAR</p>
               </div>
 
               <div className="w-[75%] md:w-[60%] h-[100%] flex justify-center items-center gap-2">
                 <input
                   type="text"
                   placeholder="$NEAR amount to stake"
-                  className="w-[70%] bg-transparent text-[1.2rem] text-white border-0 focusBorder"
+                  className="w-[70%] bg-transparent text-[1.2rem] colorTextParagraph1 border-0 focusBorder"
                 />
-                <button className="px-4 py-1 uppercase text-[1rem] font-semibold text-white bg-zinc-800 rounded-full">
+                <button className="px-4 py-1 uppercase text-[1rem] font-semibold colorTextButton2 bg-zinc-800 rounded-full">
                   max
                 </button>
               </div>
@@ -99,8 +99,8 @@ function Article() {
             <div className="w-[90%] bg-zinc-800 h-[1%]"></div>
 
             <div className="w-[100%] h-[49%] flex items-center justify-between px-2">
-              <p className="text-zinc-300 text-[1rem] font-bold">Balance:</p>
-              <p className="text-zinc-300 text-[1rem] font-bold">- $NEAR</p>
+              <p className="colorTextParagraph2 text-[1rem] font-bold">Balance:</p>
+              <p className="colorTextParagraph2 text-[1rem] font-bold">- $NEAR</p>
             </div>
           </div>
 
@@ -111,7 +111,7 @@ function Article() {
             connect wallet
           </button>
 
-          <p className="w-[100%] text-[1rem] text-zinc-400 font-semibold text-center pt-4">
+          <p className="w-[100%] text-[1rem] colorTextParagraph2 font-semibold text-center pt-4">
             You will receive: $LiNEAR
           </p>
         </div>
@@ -138,16 +138,16 @@ function Article() {
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[1rem] md:text-[1.2rem] text-white font-semibold ">NEAR</p>
+                <p className="text-[1rem] md:text-[1.2rem] colorTextParagraph1 font-semibold ">NEAR</p>
               </div>
 
               <div className="w-[75%] md:w-[60%] h-[100%] flex justify-center items-center md:gap-2">
                 <input
                   type="text"
                   placeholder="$NEAR amount to unstake"
-                  className="w-[72%] bg-transparent text-[1rem] md:text-[1.2rem] text-white border-0 focusBorder"
+                  className="w-[72%] bg-transparent text-[1rem] md:text-[1.2rem] colorTextParagraph1 border-0 focusBorder"
                 />
-                <button className="px-4 py-1 uppercase text-[1rem] font-semibold text-white bg-zinc-800 rounded-full">
+                <button className="px-4 py-1 uppercase text-[1rem] font-semibold colorTextButton2 bg-zinc-800 rounded-full">
                   max
                 </button>
               </div>
@@ -155,8 +155,8 @@ function Article() {
             <div className="w-[90%] bg-zinc-800 h-[1%]"></div>
 
             <div className="w-[100%] h-[49%] flex items-center justify-between px-2">
-              <p className="text-zinc-300 text-[1rem] font-bold">Balance:</p>
-              <p className="text-zinc-300 text-[1rem] font-bold">- $LiNEAR</p>
+              <p className="colorTextParagraph2 text-[1rem] font-bold">Balance:</p>
+              <p className="colorTextParagraph2 text-[1rem] font-bold">- $LiNEAR</p>
             </div>
           </div>
           {/* ****** */}
@@ -165,7 +165,7 @@ function Article() {
             <div className="w-[100%] sm:w-[48%] h-[46%] sm:h-[80%] rounded-xl cursor-pointer colorBackground p-[.1rem] flex justify-center items-center">
               <div className="w-[100%] h-[100%] bgStake2 flex flex-wrap content-between rounded-xl p-2 sm:p-5">
                 <div className="w-[100%] flex justify-between">
-                  <p className="text-white text-[.8rem] uppercase">
+                  <p className="colorTextParagraph1 text-[.8rem] uppercase">
                     instant unstake
                   </p>
                   <span className="cursor-pointer relative group">
@@ -182,7 +182,7 @@ function Article() {
                     />
                     <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0 md:translate-x-[50%] p-3 z-30">
                       <div className=" rounded-xl p-2 border-[.005px] border-[rgba(255,255,255,.1)] bg-[rgb(24,26,49)]">
-                        <p className="text-white text-[.9rem] ">
+                        <p className="colorTextParagraph1 text-[.9rem] ">
                           The slippage and fee of instant unstake is based on
                           the LiNEAR/wNEAR StableSwap pool on Ref
                         </p>
@@ -190,11 +190,11 @@ function Article() {
                     </div>
                   </span>
                 </div>
-                <p className="w-[100%] text-[.8rem] text-white uppercase pb-3 sm:pb-7">
+                <p className="w-[100%] text-[.8rem] colorTextParagraph1 uppercase pb-3 sm:pb-7">
                   {" "}
                   -NEAR{" "}
                 </p>
-                <p className="w-[100%] text-[.9rem] text-zinc-400">
+                <p className="w-[100%] text-[.9rem] colorTextParagraph2">
                   Unstake fee: 0.05%
                 </p>
               </div>
@@ -202,15 +202,15 @@ function Article() {
             {/* ****** */}
             <div className="w-[100%] sm:w-[48%] h-[46%] sm:h-[80%] rounded-xl cursor-pointer bgStake2 flex flex-wrap content-between p-2 sm:p-5">
               <div className="w-[100%] flex justify-between">
-                <p className="text-white text-[.8rem] uppercase">
+                <p className="colorTextParagraph1 text-[.8rem] uppercase">
                   delayed unstake in ~2 days
                 </p>
               </div>
-              <p className="w-[100%] text-[.8rem] text-white uppercase pb-3 sm:pb-7">
+              <p className="w-[100%] text-[.8rem] colorTextParagraph1 uppercase pb-3 sm:pb-7">
                 {" "}
                 -NEAR{" "}
               </p>
-              <p className="w-[100%] text-[.9rem] text-zinc-400">
+              <p className="w-[100%] text-[.9rem] colorTextParagraph2">
                 Unstake fee: 0
               </p>
             </div>

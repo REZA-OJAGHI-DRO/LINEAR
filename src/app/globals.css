@@ -10,9 +10,56 @@
   --bgTheme:#090811;
   --bgStake1:rgb(18,20,27);
   --bgStake2:rgb(22,32,39);
+
+   /* text color */
+  --colorTextParagraph1:rgb(255,255,255);
+  --colorTextParagraph2:rgb(212,212,216);
+  --colorTextParagraph3:rgb(82,82,91);
+  --colorTextTitle1:rgb(255,255,255);
+  --colorTextTitle2:rgb(161,161,170);
+  --colorTextButton1:rgb(0,0,0);
+  --colorTextButton2:rgb(255,255,255);
+
+  /* background color */
+  --bgClickSlide1:rgb(255,255,255);
+  --bgClickSlide2:rgb(63,63,70);
+  --bgTotal2:rgb(24,26,49);
 }
 
+.colorTextParagraph1{
+  color: var(--colorTextParagraph1);
+}
 
+.colorTextParagraph2{
+  color: var(--colorTextParagraph2);
+}
+.colorTextParagraph3{
+  color: var(--colorTextParagraph3);
+}
+.colorTextTitle1{
+  color: var(--colorTextTitle1);
+}
+.colorTextTitle2{
+  color: var(--colorTextTitle2);
+}
+.colorTextButton1{
+  color: var(--colorTextButton1);
+}
+.colorTextButton2{
+  color: var(--colorTextButton2);
+}
+.bgClickSlide1{
+  color: var(--bgClickSlide1);
+}
+.bgClickSlide2{
+  color: var(--bgClickSlide2);
+}
+.bgTotal1{
+  color: var(--bgTotal1);
+}
+.bgTotal2{
+  color: var(--bgTotal2);
+}
 
 .colorText{
   background: rgb(0,218,255);

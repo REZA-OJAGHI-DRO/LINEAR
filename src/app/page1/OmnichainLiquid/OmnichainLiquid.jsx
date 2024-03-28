@@ -20,13 +20,13 @@ function S1() {
     <section className="w-[100%] h-[70vh] sm:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] sm:w-[90%] lg:w-[70%] h-[60%]">
         <div className="w-[100%] h-[63%] text-center flex ">
-          <h1 className="w-[100%] h-[100%] flex justify-center items-center lineHeight text-[2.5rem] sm:text-[3rem] md:text-[3rem] xl:text-[6rem] font-extrabold text-white capitalize">
+          <h1 className="w-[100%] h-[100%] flex justify-center items-center lineHeight text-[2.5rem] sm:text-[3rem] md:text-[3rem] xl:text-[6rem] font-extrabold colorTextTitle1 capitalize">
             omnichain liquid (re)staking
           </h1>
         </div>
 
         <div className="w-[100%] h-[37%]">
-          <p className="w-[100%] h-[40%] pb-5 flex justify-center items-center text-[.9rem] md:text-[1.2rem] xl:text-[1.5rem] text-white font-semibold">
+          <p className="w-[100%] h-[40%] pb-5 flex justify-center items-center text-[.9rem] md:text-[1.2rem] xl:text-[1.5rem] colorTextParagraph1 font-semibold">
             Get the highest yield from staking $NEAR, $ETH and more
           </p>
 
@@ -35,7 +35,7 @@ function S1() {
               href="../../page2"
               className="w-[9rem] sm:w-[10rem] h-[3rem] sm:h-[3.5rem] rounded-full colorBackground flex justify-center items-center p-[.05rem] "
             >
-              <button className="w-[100%] h-[100%] flex justify-center items-center text-black font-semibold text-[1rem] sm:text-[1.1rem] capitalize">
+              <button className="w-[100%] h-[100%] flex justify-center items-center colorTextButton1 font-semibold text-[1rem] sm:text-[1.1rem] capitalize">
                 stake now
               </button>
             </Link>
@@ -74,10 +74,10 @@ function S2() {
           />
         </div>
         <div className="w-[100%] h-[73%] p-5 lg:p-10">
-          <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+          <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
             Decentralization and Security
           </h4>
-          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] text-zinc-400 pt-5">
+          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] colorTextParagraph2 pt-5">
             Delegate to up to 200 active nodes based on the Optimization
             Algorithm, significantly decentralizing and securing the network of
             NEAR. Partnering with [Redacted] to make Ethereum more
@@ -100,10 +100,10 @@ function S2() {
           />
         </div>
         <div className="w-[100%] h-[73%] p-5 lg:p-10">
-          <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+          <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
             The first Omnichain Liquid Restaking Token (bLiNEAR)
           </h4>
-          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] text-zinc-400 pt-5">
+          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] colorTextParagraph2 pt-5">
             $NEAR, but natively restaked through $NEAR Restaking to earn higher
             and diversified yield. The first of its kind among all chains.
           </p>
@@ -124,10 +124,10 @@ function S2() {
           />
         </div>
         <div className="w-[100%] h-[73%] p-5 lg:p-10">
-          <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+          <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
             Amplified Yield
           </h4>
-          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] text-zinc-400 pt-5">
+          <p className="w-[100%] text-[1rem] lg:text-[.9rem] xl:text-[1rem] colorTextParagraph2 pt-5">
             Enjoy multi-rewards through engaging with various DeFi protocols on
             both NEAR and Aurora, maximizing your yield from staked assets.
           </p>

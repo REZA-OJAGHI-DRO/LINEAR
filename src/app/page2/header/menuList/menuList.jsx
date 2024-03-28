@@ -31,7 +31,7 @@ export default function MenuList() {
         </div>
         <button
           onClick={closeMenuList}
-          className="text-[2.5rem] text-white"
+          className="text-[2.5rem] colorTextButton2"
         >
           <i className="bi bi-x"></i>
         </button>
@@ -57,7 +57,7 @@ export default function MenuList() {
 
 function UlCommunity() {
   return (
-    <ul className="w-[95%] h-[380px] border-b border-zinc-700 text-[1.4rem] content-center capitalize *:my-6 font-extrabold text-white">
+    <ul className="w-[95%] h-[380px] border-b border-zinc-700 text-[1.4rem] content-center capitalize *:my-6 font-extrabold colorTextParagraph1">
       <li className="text-[1.2rem] font-normal">community</li>
       <li>
         <Link

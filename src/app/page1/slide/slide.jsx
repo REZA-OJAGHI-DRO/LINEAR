@@ -58,10 +58,10 @@ export default function Slide() {
                 </figure>
               </div>
               <div className="w-[100%] h-[73%] p-4 xl:px-10 pt-8 xl:pt-20">
-                <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+                <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
                   Insurance Fund
                 </h4>
-                <p className="w-[100%] text-[.8rem] xl:text-[1rem] text-zinc-200 pt-2 xl:pt-5">
+                <p className="w-[100%] text-[.8rem] xl:text-[1rem] colorTextParagraph2 pt-2 xl:pt-5">
                   Stake $LNR into an insurance fund, designed to cover potential
                   losses incurred to liquid staking and restaking tokens.
                   Stakers receive $sLNR as a representation of their share of
@@ -89,10 +89,10 @@ export default function Slide() {
                 </figure>
               </div>
               <div className="w-[100%] h-[73%] p-4 xl:px-10 pt-8 xl:pt-20">
-                <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+                <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
                   Governance
                 </h4>
-                <p className="w-[100%] text-[.8rem] xl:text-[1rem] text-zinc-200 pt-2 xl:pt-5">
+                <p className="w-[100%] text-[.8rem] xl:text-[1rem] colorTextParagraph2 pt-2 xl:pt-5">
                   The power to set rates for liquid staking and restaking pools,
                   manage delegation strategies, and oversee the protocol
                   treasury.
@@ -119,10 +119,10 @@ export default function Slide() {
                 </figure>
               </div>
               <div className="w-[100%] h-[73%] p-4 xl:px-10 pt-8 xl:pt-20">
-                <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+                <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
                   Revenue Sharing
                 </h4>
-                <p className="w-[100%] text-[.8rem] xl:text-[1rem] text-zinc-200 pt-2 xl:pt-5">
+                <p className="w-[100%] text-[.8rem] xl:text-[1rem] colorTextParagraph2 pt-2 xl:pt-5">
                   Gain a share of the protocol’s agreement revenue, with
                   potential increases as the ecosystem grows.
                 </p>
@@ -148,10 +148,10 @@ export default function Slide() {
                 </figure>
               </div>
               <div className="w-[100%] h-[73%] p-4 xl:px-10 pt-8 xl:pt-20">
-                <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
+                <h4 className="w-[100%] text-[1.5rem] font-semibold colorTextTitle1">
                   Incentive Program
                 </h4>
-                <p className="w-[100%] text-[.8rem] xl:text-[1rem] text-zinc-200 pt-2 xl:pt-5">
+                <p className="w-[100%] text-[.8rem] xl:text-[1rem] colorTextParagraph2 pt-2 xl:pt-5">
                   Additional $LNR tokens will periodically be introduced into
                   the insurance fund, promoting liquid restaking tokens
                   liquidity and strengthening governance.
@@ -162,10 +162,10 @@ export default function Slide() {
           </div>
         </div>
         <div ref={s1} className="w-[100%] h-[20%] flex justify-center items-center gap-5">
-          <button onClick={()=>slide(event , 1)} className="w-[3.5rem] h-[.2rem] bg-white"></button>
-          <button onClick={()=>slide(event , 2)} className="w-[3.5rem] h-[.2rem] bg-zinc-700"></button>
-          <button onClick={()=>slide(event , 3)} className="w-[3.5rem] h-[.2rem] bg-zinc-700"></button>
-          <button onClick={()=>slide(event , 4)} className="w-[3.5rem] h-[.2rem] bg-zinc-700"></button>
+          <button onClick={()=>slide(event , 1)} className="w-[3.5rem] h-[.2rem] bgClickSlide1"></button>
+          <button onClick={()=>slide(event , 2)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
+          <button onClick={()=>slide(event , 3)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
+          <button onClick={()=>slide(event , 4)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
         </div>
       </div>
     </section>
