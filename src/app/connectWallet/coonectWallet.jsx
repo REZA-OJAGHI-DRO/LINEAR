@@ -90,7 +90,7 @@ function closeGetWallet(){
               className="w-[30%] md:w-[100%] flex justify-start items-center rounded-xl bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
             >
               <Link
-                className="w-[100%] h-[100%] flex justify-start gap-4 items-center p-3"
+                className="w-[100%] h-[100%] flex flex-wrap justify-center md:justify-start gap-4 items-center p-1 md:p-3"
                 href=""
               >
                 <Image
@@ -115,7 +115,7 @@ function closeGetWallet(){
               className="w-[30%] md:w-[100%] flex justify-start items-center gap-4 rounded-xl bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
             >
               <Link
-                className="w-[100%] h-[100%] flex justify-start gap-4 items-center p-3"
+                className="w-[100%] h-[100%] flex flex-wrap justify-center md:justify-start gap-4 items-center p-1 md:p-3"
                 target="_blank"
                 href="https://wallet.meteorwallet.app/connect/mainnet/login?connectionUid=WVYWdIrCeLnRoHPsMbM7J&source=wpm"
               >
@@ -140,7 +140,7 @@ function closeGetWallet(){
               onClick={() => pageWallet(event, 2)}
               className="w-[30%] md:w-[100%] flex justify-start items-center gap-4 rounded-xl bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
             >
-                <button onClick={HereWalletModal} className="w-[100%] h-[100%] flex justify-start gap-4 items-center p-3">
+                <button onClick={HereWalletModal} className="w-[100%] h-[100%] flex flex-wrap justify-center md:justify-start gap-4 items-center p-1 md:p-3">
               <Image
                 src="/connectWallet/HereWallet.svg"
                 alt="Picture of the author"
@@ -160,7 +160,7 @@ function closeGetWallet(){
             </li>
             <li
               onClick={() => pageWallet(event, 3)}
-              className="w-[30%] md:w-[100%] flex justify-start items-center gap-4 rounded-xl p-3 bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
+              className="w-[30%] md:w-[100%] flex flex-wrap justify-center md:justify-start items-center gap-4 rounded-xl p-1 md:p-3 bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
             >
               <Image
                 src="/connectWallet/WalletConnect.png"
@@ -180,7 +180,7 @@ function closeGetWallet(){
             </li>
             <li
               onClick={() => pageWallet(event, 4)}
-              className="w-[30%] md:w-[100%] flex justify-start items-center gap-4 rounded-xl p-3 bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
+              className="w-[30%] md:w-[100%] flex flex-wrap justify-center md:justify-start items-center gap-4 rounded-xl p-1 md:p-3 bg-[rgb(22,20,36)] hover:bg-[rgb(22,31,65)] transition-all duration-300 cursor-pointer"
             >
               <Image
                 src="/connectWallet/Sender.png"
@@ -194,7 +194,7 @@ function closeGetWallet(){
                   objectFit: "cover",
                 }}
               />
-              <p className="text-[.7rem] md:text-[.9rem] text-white font-semibold">Sender</p>
+              <p className="text-[.7rem] md:text-[.9rem] mx-2 md:mx-0 text-white font-semibold">Sender</p>
             </li>
           </ul>
         </div>
