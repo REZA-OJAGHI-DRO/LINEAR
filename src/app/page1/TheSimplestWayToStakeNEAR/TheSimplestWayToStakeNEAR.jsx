@@ -13,7 +13,7 @@ function Article() {
   return (
     <article className="w-[100%] h-[150vh] sm:h-[220vh] lg:h-[80vh] flex flex-wrap justify-center lg:content-start lg:items-start py-3  lg:gap-20">
       <article className="w-[90%] lg:w-[25%] xl:w-[23%] h-[30%] lg:h-[82.5%] rounded-2xl backdropBlur2 bgBorder1 p-[1px]">
-        <div className="w-[100%] h-[100%] bg-[rgb(27,26,39)] rounded-2xl">
+        <div className="w-[100%] h-[100%] bg-[rgb(24,24,35)] rounded-2xl">
           <div className="w-[100%] h-[40%] p-5 lg:p-10">
             <p className="text-[4.8rem] font-extrabold colorTextParagraph3">
               01
@@ -32,7 +32,7 @@ function Article() {
       </article>
 
       <article className="w-[90%] lg:w-[25%] xl:w-[23%] h-[30%] lg:h-[82.5%] bgBorder2 p-[1px] rounded-2xl backdropBlur2">
-        <div className="w-[100%] h-[100%] bg-[rgb(27,26,39)] rounded-2xl">
+        <div className="w-[100%] h-[100%] bg-[rgb(24,24,35)] rounded-2xl">
           <div className="w-[100%] h-[40%] p-5 lg:p-10">
             <p className="text-[4.8rem] font-extrabold colorTextParagraph3">
               02
@@ -51,7 +51,7 @@ function Article() {
       </article>
 
       <article className="w-[90%] lg:w-[25%] xl:w-[23%] h-[30%] lg:h-[82.5%] bgBorder3 p-[1px] rounded-2xl backdropBlur2">
-        <div className="w-[100%] h-[100%] bg-[rgb(27,26,39)] rounded-2xl">
+        <div className="w-[100%] h-[100%] bg-[rgb(24,24,35)] rounded-2xl">
           <div className="w-[100%] h-[40%] p-5 lg:p-10">
             <p className="text-[4.8rem] font-extrabold colorTextParagraph3">
               03
