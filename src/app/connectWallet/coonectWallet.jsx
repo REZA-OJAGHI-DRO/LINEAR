@@ -75,13 +75,13 @@ function closeGetWallet(){
       <article className="w-[100%] md:w-[800px] h-[100%] lg:h-[580px] overflow-hidden rounded-xl bg-[rgb(14,13,31)] flex flex-wrap relative">
         <button
           onClick={closeModal}
-          className="text-[2.5rem] z-50 text-white absolute top-3 right-3 md:top-10 md:right-10"
+          className="text-[2.5rem] z-50 colorTextButton1 absolute top-3 right-3 md:top-10 md:right-10"
         >
           <i className="bi bi-x"></i>
         </button>
 {/* ****** */}
         <div className="w-[100%] md:w-[35%] h-[30%] md:h-[100%] px-5 py-5 lg:py-10 overflow-y-scroll scrollMenuList">
-          <h3 className="w-[100%] text-white text-[1.3rem] py-2 lg:py-5 font-bold">
+          <h3 className="w-[100%] colorTextTitle1 text-[1.3rem] py-2 lg:py-5 font-bold">
             Connect Your Wallet
           </h3>
           <ul ref={li} className="w-[100%] flex flex-wrap gap-2">
@@ -105,7 +105,7 @@ function closeGetWallet(){
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[.7rem] md:text-[.9rem] text-white font-semibold">
+                <p className="text-[.7rem] md:text-[.9rem] colorTextParagraph1 font-semibold">
                   MyNear Wallet
                 </p>
               </Link>
@@ -131,7 +131,7 @@ function closeGetWallet(){
                   objectFit: "cover",
                 }}
               />
-              <p className="text-[.7rem] md:text-[.9rem] text-white font-semibold">
+              <p className="text-[.7rem] md:text-[.9rem] colorTextParagraph1 font-semibold">
                 Meteor Wallet
               </p>
               </Link>
@@ -153,7 +153,7 @@ function closeGetWallet(){
                   objectFit: "cover",
                 }}
               />
-              <p className="text-[.7rem] md:text-[.9rem] text-white font-semibold">
+              <p className="text-[.7rem] md:text-[.9rem] colorTextParagraph1 font-semibold">
                 Here Wallet
               </p>
               </button>
@@ -174,7 +174,7 @@ function closeGetWallet(){
                   objectFit: "cover",
                 }}
               />
-              <p className="text-[.7rem] md:text-[.9rem] text-white font-semibold">
+              <p className="text-[.7rem] md:text-[.9rem] colorTextParagraph1 font-semibold">
                 Wallet Connect
               </p>
             </li>
@@ -194,7 +194,7 @@ function closeGetWallet(){
                   objectFit: "cover",
                 }}
               />
-              <p className="text-[.7rem] md:text-[.9rem] mx-2 md:mx-0 text-white font-semibold">Sender</p>
+              <p className="text-[.7rem] md:text-[.9rem] mx-2 md:mx-0 colorTextParagraph1 font-semibold">Sender</p>
             </li>
           </ul>
         </div>
@@ -220,17 +220,17 @@ function closeGetWallet(){
                   }}
                 />
               </div>
-              <p className="w-[100%] text-center text-white font-bold mt-2 text-[1rem]">
+              <p className="w-[100%] text-center colorTextParagraph1 font-bold mt-2 text-[1rem]">
                 MyNearWallet
               </p>
             </div>
-            <p className="w-[100%] text-white text-center">?</p>
-            <p className="w-[60%] text-center text-white mt-4 text-[.9rem]">
+            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Meteor Wallet: User closed the window
               before completing the action
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="text-white border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -256,17 +256,17 @@ function closeGetWallet(){
                   }}
                 />
               </div>
-              <p className="w-[100%] text-center text-white font-bold mt-2 text-[1rem]">
+              <p className="w-[100%] text-center colorTextParagraph1 font-bold mt-2 text-[1rem]">
                 Meteor Wallet
               </p>
             </div>
-            <p className="w-[100%] text-white text-center">?</p>
-            <p className="w-[60%] text-center text-white mt-4 text-[.9rem]">
+            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Meteor Wallet: User closed the window
               before completing the action
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="text-white border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -292,16 +292,16 @@ function closeGetWallet(){
                   }}
                 />
               </div>
-              <p className="w-[100%] text-center text-white font-bold mt-2 text-[1rem]">
+              <p className="w-[100%] text-center colorTextParagraph1 font-bold mt-2 text-[1rem]">
                 HereWallet
               </p>
             </div>
-            <p className="w-[100%] text-white text-center">?</p>
-            <p className="w-[60%] text-center text-white mt-4 text-[.9rem]">
+            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem]">
               Failed to sign in with Here Wallet:
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="text-white border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button className="colorTextButton1 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -327,18 +327,18 @@ function closeGetWallet(){
                   }}
                 />
               </div>
-              <p className="w-[100%] text-center text-white font-bold mt-2 text-[1rem]">
+              <p className="w-[100%] text-center colorTextParagraph1 font-bold mt-2 text-[1rem]">
                 Wallet Connect
               </p>
             </div>
-            <p className="w-[100%] text-white text-center">?</p>
-            <p className="w-[60%] text-center text-white mt-4 text-[.9rem] text-ellipsis overflow-hidden">
+            <p className="w-[100%] colorTextParagraph1 text-center">?</p>
+            <p className="w-[60%] text-center colorTextParagraph1 mt-4 text-[.9rem] text-ellipsis overflow-hidden">
               Failed to sign in with WalletConnect: WebSocket connection failed
               for URL:
               wss://relay.walletconnect.com?auth=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkaWQ6a2V5Ono2TWt1VW1ybmVKVkhGRmto
             </p>
             <div className="w-[100%] flex justify-center items-center py-3">
-              <button className="text-white border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
+              <button className="colorTextButton2 border px-7 rounded-lg text-[1rem] capitalize font-semibold py-2 bg-[rgb(29,33,68)] border-[rgb(44,50,109)]">
                 retry
               </button>
             </div>
@@ -371,10 +371,10 @@ function closeGetWallet(){
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[1rem] text-white font-semibold">Sender</p>
+                <p className="text-[1rem] colorTextParagraph1 font-semibold">Sender</p>
               </div>
 
-              <p className="w-[70%] text-white">
+              <p className="w-[70%] colorTextParagraph1">
                 You'll need to install Sender to continue. After installing{" "}
                 <span className="text-[rgb(109,94,213)]">
                   refresh the page.
@@ -397,12 +397,12 @@ function closeGetWallet(){
             style={{ display: "flex" }}
             className="w-[100%] h-[100%] flex-wrap justify-center"
           >
-            <h3 className="w-[100%] text-white text-[1.3rem] py-5 font-bold text-center">
+            <h3 className="w-[100%] colorTextTitle1 text-[1.3rem] py-5 font-bold text-center">
               What is a Wallet?
             </h3>
             <ul className="w-[100%]">
               <li className="w-[100%] p-10 flex gap-5">
-                <div className="text-white bg-[rgb(158,204,230)] p-2 flex justify-center items-center rounded-xl">
+                <div className="colorTextParagraph1 bg-[rgb(158,204,230)] p-2 flex justify-center items-center rounded-xl">
                   <svg
                     width="30"
                     height="30"
@@ -420,7 +420,7 @@ function closeGetWallet(){
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold">
+                  <p className="colorTextParagraph1 font-extrabold">
                     Secure & Manage Your Digital Assets
                   </p>
                   <p className="text-[rgb(109,94,213)] text-[.9rem]">
@@ -429,7 +429,7 @@ function closeGetWallet(){
                 </div>
               </li>
               <li className="w-[100%] p-10 flex gap-5">
-                <div className="text-white bg-[rgb(158,204,230)] px-2 py-0 flex justify-center items-center rounded-xl">
+                <div className="colorTextParagraph1 bg-[rgb(158,204,230)] px-2 py-0 flex justify-center items-center rounded-xl">
                   <svg
                     width="30"
                     height="30"
@@ -460,7 +460,7 @@ function closeGetWallet(){
                   </svg>
                 </div>
                 <div>
-                  <p className="text-white font-extrabold">
+                  <p className="colorTextParagraph1 font-extrabold">
                     Log In to Any NEAR App
                   </p>
                   <p className="text-[rgb(109,94,213)] text-[.9rem]">
@@ -471,7 +471,7 @@ function closeGetWallet(){
               </li>
             </ul>
 
-            <button onClick={getWallet} className="w-[80%] rounded-full text-[1rem] font-bold  colorBackground capitalize md:py-3 lg:py-0 lg:mt-10">
+            <button onClick={getWallet} className="w-[80%] rounded-full text-[1rem] font-bold  colorBackground capitalize py-1 md:py-3 lg:py-0 lg:mt-10">
               get a wallet
             </button>
           </div>
@@ -485,7 +485,7 @@ function closeGetWallet(){
                 >
                 <i className="bi bi-chevron-left"></i>
               </button> 
-          <h3 className=" text-white text-[1.3rem] py-5 font-semibold text-center capitalize">
+          <h3 className=" colorTextTitle1 text-[1.3rem] py-5 font-semibold text-center capitalize">
 
               get a wallet
             </h3>
