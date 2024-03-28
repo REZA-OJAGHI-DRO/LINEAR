@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Menu() {
     return (
-      <ul className=" xl:w-[50%] h-[100%] flex *:flex *:justify-center *:items-center *:px-1">
+      <ul className=" xl:w-[100%] h-[100%] flex *:flex *:justify-center *:items-center *:px-1">
         <li>
           <Link
             href="https://discord.com/invite/bkkvWwMf2T"

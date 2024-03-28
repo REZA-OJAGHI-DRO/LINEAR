@@ -11,7 +11,7 @@ export default function Header() {
       <div className="w-[100%] h-[100%] flex px-5 justify-between items-center absolute top-0">
         <Logo />
         <div className=" xl:w-[24%] h-[100%] flex  items-center px-1">
-          <div className="hidden sm:flex">
+          <div className="hidden md:flex xl:w-[50%] h-[100%]">
           <Menu />
           </div>
           <Ul />

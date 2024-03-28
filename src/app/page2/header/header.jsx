@@ -41,8 +41,9 @@ export default function Header() {
         </div>
 
         <div className=" xl:w-[24%] h-[100%] flex  items-center px-5">
-
+        <div className="hidden md:flex xl:w-[50%] h-[100%]">
           <Menu />
+          </div>
           <Ul />
 
           <button onClick={()=>clickMenuList(event)} className="flex xl:hidden">
