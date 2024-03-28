@@ -162,10 +162,10 @@ export default function Slide() {
           </div>
         </div>
         <div ref={s1} className="w-[100%] h-[20%] flex justify-center items-center gap-5">
-          <button onClick={()=>slide(event , 1)} className="w-[3.5rem] h-[.2rem] bgClickSlide1"></button>
-          <button onClick={()=>slide(event , 2)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
-          <button onClick={()=>slide(event , 3)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
-          <button onClick={()=>slide(event , 4)} className="w-[3.5rem] h-[.2rem] bgClickSlide2"></button>
+          <button onClick={()=>slide(event , 1)} className="w-[3.5rem] h-[.2rem] bg-[rgb(255,255,255)]"></button>
+          <button onClick={()=>slide(event , 2)} className="w-[3.5rem] h-[.2rem] bg-[rgb(63,63,70)]"></button>
+          <button onClick={()=>slide(event , 3)} className="w-[3.5rem] h-[.2rem] bg-[rgb(63,63,70)]"></button>
+          <button onClick={()=>slide(event , 4)} className="w-[3.5rem] h-[.2rem] bg-[rgb(63,63,70)]"></button>
         </div>
       </div>
     </section>
