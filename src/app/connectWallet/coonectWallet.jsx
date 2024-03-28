@@ -75,7 +75,7 @@ function closeGetWallet(){
       <article className="w-[100%] md:w-[800px] h-[100%] lg:h-[580px] overflow-hidden rounded-xl bg-[rgb(14,13,31)] flex flex-wrap relative">
         <button
           onClick={closeModal}
-          className="text-[2.5rem] z-50 colorTextButton1 absolute top-3 right-3 md:top-10 md:right-10"
+          className="text-[2.5rem] z-50 text-[rgb(255,255,255)] absolute top-3 right-3 md:top-10 md:right-10"
         >
           <i className="bi bi-x"></i>
         </button>
