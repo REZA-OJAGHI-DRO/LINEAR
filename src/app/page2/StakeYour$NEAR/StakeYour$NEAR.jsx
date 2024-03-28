@@ -180,7 +180,7 @@ function Article() {
                         objectFit: "cover",
                       }}
                     />
-                    <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0 translate-x-[50%] p-3 z-30">
+                    <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0 md:translate-x-[50%] p-3 z-30">
                       <div className=" rounded-xl p-2 border-[.005px] border-[rgba(255,255,255,.1)] bg-[rgb(24,26,49)]">
                         <p className="text-white text-[.9rem] ">
                           The slippage and fee of instant unstake is based on

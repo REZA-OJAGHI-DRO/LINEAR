@@ -54,7 +54,7 @@ export default function Total() {
                     objectFit: "cover",
                   }}
                 />
-                <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0 translate-x-[50%] p-3 z-30">
+                <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0  p-3 z-50">
                   <div className=" rounded-xl p-2 border-[.005px] border-[rgba(255,255,255,.1)] bg-[rgb(24,26,49)]">
                     <p className="text-white text-[.9rem] ">
                       APY is based on the 30 day average price of $LiNEAR
@@ -85,7 +85,7 @@ export default function Total() {
                     objectFit: "cover",
                   }}
                 />
-                <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0 translate-x-[50%] p-3 z-30">
+                <div className="group-hover:flex hidden w-[300px] absolute top-100  right-0  p-3 z-30">
                   <div className=" rounded-xl p-2 border-[.005px] border-[rgba(255,255,255,.1)] bg-[rgb(24,26,49)]">
                     <p className="text-white text-[.9rem] ">
                       This refers to the amount of validators chosen through the
