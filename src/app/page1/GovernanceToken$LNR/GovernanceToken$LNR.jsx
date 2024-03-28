@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function GovernanceToken$LNR() {
   return (
-    <section className="w-[100%] h-[90vh] xl:h-[70vh]">
+    <section className="w-[100%] h-[90vh] md:h-[150vh] xl:h-[70vh]">
 
       <article className="w-[100%] h-[20%] xl:h-[60%] flex content-end flex-wrap">
         <div className="w-[100%] h-[50%] flex justify-center items-center">
@@ -43,8 +43,8 @@ export default function GovernanceToken$LNR() {
 
       <article className="w-[100%] h-[80%] xl:h-[40%] flex flex-wrap justify-center items-start py-7 md:gap-5">
         
-        <article className=" w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
-          <div className="w-[100%] h-[60%] flex flex-wrap items-center text-center ">
+        <article className=" w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] flex justify-center items-center border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
+          <div className="w-[100%] h-[60%] flex flex-wrap content-center text-center">
             <h4 className="w-[100%] text-[.9rem] h-[40%] sm:text-[1rem] xl:text-[1.2rem] text-white">
             Total Supply
             </h4>
@@ -54,7 +54,7 @@ export default function GovernanceToken$LNR() {
           </div>
         </article>
 
-        <article className="w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
+        <article className="w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] flex justify-center items-center border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
           <div className="w-[100%] h-[60%] flex flex-wrap items-center text-center">
             <h4 className="w-[100%] text-[.9rem] h-[40%] sm:text-[1rem] xl:text-[1.2rem]  text-white">
             NEAR NEP-141 Address
@@ -65,7 +65,7 @@ export default function GovernanceToken$LNR() {
           </div>
         </article>
 
-        <article className="w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
+        <article className="w-[90%] xl:w-[24%] h-[30%] xl:h-[90%] flex justify-center items-center border-[.005px] border-[rgba(255,255,255,.1)] rounded-2xl backdropBlur2">
           <div className="w-[100%] h-[60%] flex flex-wrap items-center text-center">
             <h4 className="w-[100%] text-[.9rem] sm:text-[1rem] h-[40%] xl:text-[1.2rem]  text-white">
             ETH ERC-20 Address

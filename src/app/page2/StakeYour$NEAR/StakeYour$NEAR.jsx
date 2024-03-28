@@ -27,26 +27,26 @@ function Article() {
     if (x == 0) {
       click.current.children[0].style.background = "rgb(74,76,80)";
       click.current.children[1].style.background = "transparent";
-      stake.current.style.display='flex'
-      unStake.current.style.display='none'
+      stake.current.style.display = "flex";
+      unStake.current.style.display = "none";
     } else if (x == 1) {
-        click.current.children[0].style.background = "transparent";
-        click.current.children[1].style.background = "rgb(74,76,80)";
-        stake.current.style.display='none'
-        unStake.current.style.display='flex'
+      click.current.children[0].style.background = "transparent";
+      click.current.children[1].style.background = "rgb(74,76,80)";
+      stake.current.style.display = "none";
+      unStake.current.style.display = "flex";
     }
   }
 
   const dis2 = useStore((state) => state.dis2);
-  function modal(e){
-    dis2('flex')
+  function modal(e) {
+    dis2("flex");
   }
   return (
-    <article  className="w-[100%] h-[88%] md:h-[75%] lg:h-[88%]">
+    <article className="w-[100%] h-[88%] md:h-[75%] lg:h-[88%]">
       <div className="w-[100%] h-[15%] md:h-[25%] lg:h-[15%] flex justify-center items-center">
         <div
           ref={click}
-          className="w-[22rem] h-[45%] border-[.005px] p-1 border-[rgba(255,255,255,.1)] rounded-full bg-[rgb(13,12,18)] flex"
+          className="w-[22rem] h-[60%] md:h-[50%] lg:h-[45%] border-[.005px] p-1 border-[rgba(255,255,255,.1)] rounded-full bg-[rgb(13,12,18)] flex"
         >
           <button
             onClick={() => clickStake(event, 0)}
@@ -62,12 +62,15 @@ function Article() {
           </button>
         </div>
       </div>
-
-      <div ref={stake} className="w-[100%] h-[85%] flex justify-center items-start ">
+      {/* stake */}
+      <div
+        ref={stake}
+        className="w-[100%] h-[85%] flex justify-center items-start "
+      >
         <div className="w-[100%] md:w-[550px] px-2 py-7 md:p-7 rounded-xl border-[.005px] border-[rgba(255,255,255,.01)] backdropBlur2">
           <div className="w-[100%] h-[130px] rounded-xl overflow-hidden bgStake1 flex flex-wrap justify-center">
             <div className="w-[100%] h-[50%] flex items-center justify-between">
-              <div className="w-[20%] h-[100%] flex justify-center items-center gap-2">
+              <div className="w-[20%] h-[100%] flex justify-center items-center gap-1 md:gap-2">
                 <Image
                   src="/page2Stake/StakeYour$NEAR/near.svg"
                   alt="Picture of the author"
@@ -79,10 +82,10 @@ function Article() {
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[1.2rem] text-white font-semibold ">NEAR</p>
+                <p className="text-[1rem] md:text-[1.2rem] text-white font-semibold ">NEAR</p>
               </div>
 
-              <div className="w-[60%] h-[100%] flex justify-center items-center gap-2">
+              <div className="w-[75%] md:w-[60%] h-[100%] flex justify-center items-center gap-2">
                 <input
                   type="text"
                   placeholder="$NEAR amount to stake"
@@ -101,19 +104,29 @@ function Article() {
             </div>
           </div>
 
-          <button onClick={()=>modal(event)} className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize mt-2">
+          <button
+            onClick={() => modal(event)}
+            className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize mt-2"
+          >
             connect wallet
           </button>
 
-          <p className="w-[100%] text-[1rem] text-zinc-400 font-semibold text-center pt-4">You will receive: $LiNEAR</p>
+          <p className="w-[100%] text-[1rem] text-zinc-400 font-semibold text-center pt-4">
+            You will receive: $LiNEAR
+          </p>
         </div>
       </div>
-
-      <div ref={unStake} style={{display:'none'}} className="w-[100%] h-[85%] flex justify-center items-start ">
+      {/* unStake */}
+      <div
+        ref={unStake}
+        style={{ display: "none" }}
+        className="w-[100%] h-[85%] flex justify-center items-start "
+      >
         <div className="w-[550px] p-5 rounded-xl border-[.005px] border-[rgba(255,255,255,.01)] backdropBlur2">
+          {/* ****** */}
           <div className="w-[100%] h-[130px] rounded-xl overflow-hidden bgStake1 flex flex-wrap justify-center">
             <div className="w-[100%] h-[50%] flex items-center justify-between">
-              <div className="w-[25%] h-[100%] flex justify-center items-center gap-2">
+              <div className="w-[25%] h-[100%] flex justify-center items-center gap-1 md:gap-2">
                 <Image
                   src="/page2Stake/StakeYour$NEAR/linear.svg"
                   alt="Picture of the author"
@@ -125,14 +138,14 @@ function Article() {
                     objectFit: "cover",
                   }}
                 />
-                <p className="text-[1.2rem] text-white font-semibold ">NEAR</p>
+                <p className="text-[1rem] md:text-[1.2rem] text-white font-semibold ">NEAR</p>
               </div>
 
-              <div className="w-[60%] h-[100%] flex justify-center items-center gap-2">
+              <div className="w-[75%] md:w-[60%] h-[100%] flex justify-center items-center md:gap-2">
                 <input
                   type="text"
                   placeholder="$NEAR amount to unstake"
-                  className="w-[72%] bg-transparent text-[1.2rem] text-white border-0 focusBorder"
+                  className="w-[72%] bg-transparent text-[1rem] md:text-[1.2rem] text-white border-0 focusBorder"
                 />
                 <button className="px-4 py-1 uppercase text-[1rem] font-semibold text-white bg-zinc-800 rounded-full">
                   max
@@ -146,12 +159,15 @@ function Article() {
               <p className="text-zinc-300 text-[1rem] font-bold">- $LiNEAR</p>
             </div>
           </div>
-
-          <div className="w-[100%] h-[220px] flex justify-between items-center">
-            <div className="w-[48%] h-[80%] rounded-xl cursor-pointer colorBackground p-[.1rem] flex justify-center items-center">
-              <div className="w-[100%] h-[100%] bgStake2 flex flex-wrap content-between rounded-xl p-5">
+          {/* ****** */}
+          <div className="w-[100%] h-[220px] flex flex-wrap justify-between content-around sm:items-center">
+            {/* ****** */}
+            <div className="w-[100%] sm:w-[48%] h-[46%] sm:h-[80%] rounded-xl cursor-pointer colorBackground p-[.1rem] flex justify-center items-center">
+              <div className="w-[100%] h-[100%] bgStake2 flex flex-wrap content-between rounded-xl p-2 sm:p-5">
                 <div className="w-[100%] flex justify-between">
-                  <p className="text-white text-[.8rem] uppercase">instant unstake</p>
+                  <p className="text-white text-[.8rem] uppercase">
+                    instant unstake
+                  </p>
                   <span className="cursor-pointer relative group">
                     <Image
                       src="/page2Stake/Total/tip.svg"
@@ -174,21 +190,37 @@ function Article() {
                     </div>
                   </span>
                 </div>
-                <p className="w-[100%] text-[.8rem] text-white uppercase pb-7"> -NEAR </p>
-                <p className="w-[100%] text-[.9rem] text-zinc-400">Unstake fee: 0.05%</p>
+                <p className="w-[100%] text-[.8rem] text-white uppercase pb-3 sm:pb-7">
+                  {" "}
+                  -NEAR{" "}
+                </p>
+                <p className="w-[100%] text-[.9rem] text-zinc-400">
+                  Unstake fee: 0.05%
+                </p>
               </div>
             </div>
-
-            <div className="w-[48%] h-[80%] rounded-xl cursor-pointer bgStake2 flex flex-wrap content-between p-5">
-            <div className="w-[100%] flex justify-between">
-                  <p className="text-white text-[.8rem] uppercase">delayed unstake in ~2 days</p>
-                </div>
-                <p className="w-[100%] text-[.8rem] text-white uppercase pb-7"> -NEAR </p>
-                <p className="w-[100%] text-[.9rem] text-zinc-400">Unstake fee: 0</p>
+            {/* ****** */}
+            <div className="w-[100%] sm:w-[48%] h-[46%] sm:h-[80%] rounded-xl cursor-pointer bgStake2 flex flex-wrap content-between p-2 sm:p-5">
+              <div className="w-[100%] flex justify-between">
+                <p className="text-white text-[.8rem] uppercase">
+                  delayed unstake in ~2 days
+                </p>
+              </div>
+              <p className="w-[100%] text-[.8rem] text-white uppercase pb-3 sm:pb-7">
+                {" "}
+                -NEAR{" "}
+              </p>
+              <p className="w-[100%] text-[.9rem] text-zinc-400">
+                Unstake fee: 0
+              </p>
             </div>
+            {/* ***** */}
           </div>
-
-          <button className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize">
+          {/* ********* */}
+          <button
+            onClick={() => modal(event)}
+            className="w-[100%] rounded-full text-[1.3rem] font-bold py-2 colorBackground capitalize"
+          >
             connect wallet
           </button>
         </div>

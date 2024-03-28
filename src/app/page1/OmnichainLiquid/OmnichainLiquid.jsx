@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function OmnichainLiquid() {
   return (
-    <section className="w-[100%] h-[290vh] sm:h-[320vh] lg:h-[180vh]">
+    <section className="w-[100%] h-[220vh] sm:h-[320vh] lg:h-[180vh]">
 
         <article className="w-[100%] h-[100%] flex justify-center items-center">
           <div className="2xl:container">
@@ -20,13 +20,13 @@ function S1() {
     <section className="w-[100%] h-[70vh] sm:h-[100vh] flex justify-center items-center ">
       <div className="w-[100%] sm:w-[90%] lg:w-[70%] h-[60%]">
         <div className="w-[100%] h-[63%] text-center flex ">
-          <h1 className="w-[100%] h-[100%] flex items-center lineHeight text-[2.5rem] sm:text-[3rem] md:text-[3rem] xl:text-[6rem] font-extrabold text-white capitalize">
+          <h1 className="w-[100%] h-[100%] flex justify-center items-center lineHeight text-[2.5rem] sm:text-[3rem] md:text-[3rem] xl:text-[6rem] font-extrabold text-white capitalize">
             omnichain liquid (re)staking
           </h1>
         </div>
 
         <div className="w-[100%] h-[37%]">
-          <p className="w-[100%] h-[40%] flex justify-center items-center text-[.9rem] md:text-[1.2rem] xl:text-[1.5rem] text-white font-semibold">
+          <p className="w-[100%] h-[40%] pb-5 flex justify-center items-center text-[.9rem] md:text-[1.2rem] xl:text-[1.5rem] text-white font-semibold">
             Get the highest yield from staking $NEAR, $ETH and more
           </p>
 
@@ -58,9 +58,9 @@ function S1() {
 
 function S2() {
   return (
-    <section className="w-[100%] h-[220vh] lg:h-[80vh] flex flex-wrap justify-center items-start py-3 gap-10 xl:gap-20">
+    <section className="w-[100%] h-[150vh] sm:h-[220vh] lg:h-[80vh] flex flex-wrap justify-center items-start py-3 gap-10 xl:gap-20">
       <article className="w-[90%] lg:w-[30%] xl:w-[23%] h-[30%] lg:h-[82.5%] border-[.005px] border-[rgba(255,255,255,.03)] rounded-2xl backdropBlur2">
-        <div className="w-[100%] h-[27%] p-10">
+        <div className="w-[100%] h-[27%] p-5 lg:p-10">
           <Image
             src="/OmnichainLiquid/core-features-01.svg"
             alt="Picture of the author"
@@ -73,7 +73,7 @@ function S2() {
             }}
           />
         </div>
-        <div className="w-[100%] h-[73%] p-10">
+        <div className="w-[100%] h-[73%] p-5 lg:p-10">
           <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
             Decentralization and Security
           </h4>
@@ -86,7 +86,7 @@ function S2() {
         </div>
       </article>
       <article className="w-[90%] lg:w-[30%] xl:w-[23%] h-[30%] lg:h-[82.5%] border-[.005px] border-[rgba(255,255,255,.03)] rounded-2xl backdropBlur2">
-        <div className="w-[100%] h-[27%] p-10">
+        <div className="w-[100%] h-[27%] p-5 lg:p-10">
           <Image
             src="/OmnichainLiquid/core-features-02.svg"
             alt="Picture of the author"
@@ -99,7 +99,7 @@ function S2() {
             }}
           />
         </div>
-        <div className="w-[100%] h-[73%] p-10">
+        <div className="w-[100%] h-[73%] p-5 lg:p-10">
           <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
             The first Omnichain Liquid Restaking Token (bLiNEAR)
           </h4>
@@ -110,7 +110,7 @@ function S2() {
         </div>
       </article>
       <article className="w-[90%] lg:w-[30%] xl:w-[23%] h-[30%] lg:h-[82.5%] border-[.005px] border-[rgba(255,255,255,.03)] rounded-2xl backdropBlur2">
-        <div className="w-[100%] h-[27%] p-10">
+        <div className="w-[100%] h-[27%] p-5 lg:p-10">
           <Image
             src="/OmnichainLiquid/core-features-03.svg"
             alt="Picture of the author"
@@ -123,7 +123,7 @@ function S2() {
             }}
           />
         </div>
-        <div className="w-[100%] h-[73%] p-10">
+        <div className="w-[100%] h-[73%] p-5 lg:p-10">
           <h4 className="w-[100%] text-[1.5rem] font-semibold text-white">
             Amplified Yield
           </h4>

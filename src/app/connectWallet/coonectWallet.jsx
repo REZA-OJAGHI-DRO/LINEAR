@@ -80,8 +80,8 @@ function closeGetWallet(){
           <i className="bi bi-x"></i>
         </button>
 {/* ****** */}
-        <div className="w-[100%] md:w-[35%] h-[30%] md:h-[100%] px-5 lg:py-10">
-          <h3 className="w-[100%] text-white text-[1.3rem] lg:py-5 font-bold">
+        <div className="w-[100%] md:w-[35%] h-[30%] md:h-[100%] px-5 py-5 lg:py-10 overflow-y-scroll scrollMenuList">
+          <h3 className="w-[100%] text-white text-[1.3rem] py-2 lg:py-5 font-bold">
             Connect Your Wallet
           </h3>
           <ul ref={li} className="w-[100%] flex flex-wrap gap-2">
@@ -199,7 +199,7 @@ function closeGetWallet(){
           </ul>
         </div>
 {/* ******* */}
-        <div ref={page} className="w-[100%] md:w-[65%] h-[70%] md:h-[100%]  bg-[rgb(16,12,37)] py-10">
+        <div ref={page} className="w-[100%] md:w-[65%] h-[70%] md:h-[100%]  bg-[rgb(16,12,37)] py-10 overflow-y-scroll scrollMenuList">
           {/* MyNearWallet */}
           <div
             style={{ display: "none" }}
@@ -471,7 +471,7 @@ function closeGetWallet(){
               </li>
             </ul>
 
-            <button onClick={getWallet} className="w-[80%] rounded-full text-[1rem] font-bold  colorBackground capitalize mt-10">
+            <button onClick={getWallet} className="w-[80%] rounded-full text-[1rem] font-bold  colorBackground capitalize md:py-3 lg:py-0 lg:mt-10">
               get a wallet
             </button>
           </div>

@@ -124,3 +124,15 @@ text-overflow: ellipsis;
 .shadow1{
   box-shadow: 7px 7px 0px 1px rgb(44, 44, 44);
 }
+
+
+.scrollMenuList::-webkit-scrollbar{
+  width: 7px;
+}
+.scrollMenuList::-webkit-scrollbar-thumb{
+  background-color: rgb(10, 83, 109);
+  border-radius: 20px;
+}
+.scrollMenuList::-webkit-scrollbar-track{
+  background-color: var(--bgTheme);
+}

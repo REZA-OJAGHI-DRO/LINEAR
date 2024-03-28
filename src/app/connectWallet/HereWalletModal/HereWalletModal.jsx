@@ -479,7 +479,7 @@ export default function HereWalletModal() {
                 </p>
               </div>
 
-              <div className="w-[100%] h-[60%] flex flex-wrap justify-center items-center gap-2">
+              <div className="w-[100%] h-[60%] flex flex-wrap justify-center items-center gap-2 mt-2">
                 <button className="px-3 text-[1rem] h-[2.5rem] border rounded-full border-zinc-400">Click to connect</button>
                 <input onInput={()=>inp(event)} type="text" className="w-[3rem] h-[2.5rem] border rounded-full border-zinc-400 text-center cursor-pointer focusBorder bg-transparent"/>
               </div>

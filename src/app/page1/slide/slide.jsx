@@ -31,12 +31,12 @@ export default function Slide() {
     }
 
   return (
-    <section className="w-[100%] h-[60vh] md:h-[80vh] xl:h-[80vh] flex justify-center items-center">
+    <section className="w-[100%] h-[60vh] md:h-[100vh] xl:h-[80vh] flex justify-center items-center">
       <div className="w-[90%] xl:w-[80%] h-[80%]">
         <div className="w-[100%] h-[80%] overflow-hidden">
           <div
           ref={slider}
-            style={{ transform: "translateX(10%)" }}
+            style={{ transform: "translateX(5%)" }}
             className="h-[100%] transition-all duration-500 w-[1100px] sm:w-[1300px] md:w-[1900px] xl:w-[2550px] flex justify-between gap-7"
           >
             {/* slide1 */}
